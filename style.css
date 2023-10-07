@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #13181c;
+  color: white;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.mainview {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  padding: 50px;
+  background-image: url(./tic-tac-toe-seamless-background-on-dark-blue-illus.webp);
+}
+.mainview .board {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+}
+.mainview .board .cell {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.468);
+  font-size: 100px;
+}
+.mainview .btn-restart {
+  padding: 16px 48px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border: 2px solid white;
+  border-radius: 100px;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.mainview .btn-restart:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}/*# sourceMappingURL=style.css.map */
